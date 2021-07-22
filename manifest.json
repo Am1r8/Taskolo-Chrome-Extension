@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Taskolo",
+    "description": "Open your Tabs with only one CLICK!",
+    "version": "1.2.0",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["Content.js"]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_tittle": "Taskolo",
+        "default_icon": {
+            "16": "Taskolo.png",
+            "32": "Taskolo.png",
+            "48": "Taskolo.png",
+            "128": "Taskolo.png"
+        }
+    },
+    "icons": {
+        "16": "Taskolo.png",
+        "32": "Taskolo.png",
+        "48": "Taskolo.png",
+        "128": "Taskolo.png"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
